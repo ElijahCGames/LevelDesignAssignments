@@ -9,8 +9,16 @@ public class KillPlane : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        transform.position = checkpoint.position;
-        transform.rotation = checkpoint.rotation;
+        if (other.CompareTag("KP")) {
+            transform.position = checkpoint.position;
+            transform.rotation = checkpoint.rotation;
+        }
+    }
+    private void OnTriggerStay(Collider other) {
+        if (other.CompareTag("KP")) {
+            transform.position = checkpoint.position;
+            transform.rotation = checkpoint.rotation;
+        }
     }
 
 }
