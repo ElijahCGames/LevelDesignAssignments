@@ -8,6 +8,10 @@ public class Zoom : MonoBehaviour
     void Start()
     {
         Rigidbody zoo = GetComponent<Rigidbody>();
-        zoo.velocity = transform.TransformDirection(Vector3.forward * 10);
+        zoo.velocity = transform.TransformDirection(Vector3.forward * 50);
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        Destroy(gameObject);
     }
 }
