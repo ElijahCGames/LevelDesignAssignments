@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Shoot : MonoBehaviour
 {
@@ -9,7 +10,12 @@ public class Shoot : MonoBehaviour
     public GameObject target;
     private float timer;
     private bool BossAlive = true;
+    private NavMeshAgent agent;
 
+    private void Start()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
     private void Update()
     {
         if(target != null)
@@ -31,7 +37,16 @@ public class Shoot : MonoBehaviour
         while (BossAlive)
         {
             yield return new WaitForSeconds(ShootRate);
-            Instantiate(sphere, transform.position + new Vector3(0f, 0, 2f), transform.rotation);
+            Instantiate(sphere, transform.position, transform.rotation * Quaternion.Euler(Random.Range(-5,5), Random.Range(-5, 5), Random.Range(-5, 5)));
+        }
+    }
+
+    public IEnumerator moveToPlayer()
+    {
+        while (BossAlive)
+        {
+            agent.destination = target.transform.position;
+            yield return null;
         }
     }
 }

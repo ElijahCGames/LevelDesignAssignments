@@ -10,6 +10,7 @@ public class LevelControl : MonoBehaviour
     private bool outDes;
     private float timer = 0;
     public GameObject bp;
+    public Shoot nextLevel;
     // Start is called before the first frame update
 
     void Start()
@@ -39,6 +40,12 @@ public class LevelControl : MonoBehaviour
                 broke = Instantiate(bp, g.transform.position + new Vector3(0f, -2.5f, 0f), g.transform.rotation);
             }
             outDes = true;
+        }
+
+        if(outDes && midDes)
+        {
+            nextLevel.ShootRate = 0.5f;
+            StartCoroutine(nextLevel.moveToPlayer());
         }
 
     }
