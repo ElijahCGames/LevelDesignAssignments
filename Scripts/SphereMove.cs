@@ -17,7 +17,7 @@ public class SphereMove : MonoBehaviour
     {
         float horiz = Input.GetAxis("Horizontal");
         float vert = Input.GetAxis("Vertical");
-        Vector3 vect = new Vector3(vert * speed, 0, -horiz * speed);
+        Vector3 vect = new Vector3(horiz * speed, 0,  vert* speed);
         rb.AddForce(vect);
     }
 }
