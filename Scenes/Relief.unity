@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -223,26 +223,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: _wreckingball (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_EnableCollision
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0.0000000037252903
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.01738897
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 8439371944633448606, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,15 +293,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.01
+      propertyPath: m_EnableCollision
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0
+      value: 0.0000000037252903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.01738897
       objectReference: {fileID: 0}
     - target: {fileID: 3486939357782146630, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -343,10 +328,25 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.000000008381903
       objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3486939359240986122, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.014915381
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc794a796f09a4b4b8b552bdd6cd1e2e, type: 3}
@@ -361,26 +361,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _wreckingball (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_EnableCollision
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -0.000000007450581
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.017388962
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8439371944633448606, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -452,15 +432,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.0100000035
+      propertyPath: m_EnableCollision
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -0.000000007450581
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.017388962
       objectReference: {fileID: 0}
     - target: {fileID: 3486939357782146630, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -482,10 +467,25 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.000000008381903
       objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.0100000035
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.000000007450581
+      objectReference: {fileID: 0}
     - target: {fileID: 3486939359240986122, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.014915381
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc794a796f09a4b4b8b552bdd6cd1e2e, type: 3}
@@ -546,7 +546,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -638,7 +637,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -730,7 +728,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -776,26 +773,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _wreckingball (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_EnableCollision
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0.0000000037252903
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.01738897
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8439371944633448606, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -867,15 +844,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.009999998
+      propertyPath: m_EnableCollision
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.0000000018626451
+      value: 0.0000000037252903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.01738897
       objectReference: {fileID: 0}
     - target: {fileID: 3486939357782146630, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -897,10 +879,25 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.000000010244548
       objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.009999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.0000000018626451
+      objectReference: {fileID: 0}
     - target: {fileID: 3486939359240986122, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.014915381
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc794a796f09a4b4b8b552bdd6cd1e2e, type: 3}
@@ -961,7 +958,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1150,7 +1146,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1242,7 +1237,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1334,7 +1328,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1380,16 +1373,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _wreckingball (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_EnableCollision
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8439371944633448606, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -1461,15 +1444,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.00999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -0.0000000037252903
+      propertyPath: m_EnableCollision
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3486939357782146630, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -1490,6 +1468,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -0.000000013969839
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.00999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.0000000037252903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc794a796f09a4b4b8b552bdd6cd1e2e, type: 3}
@@ -1550,7 +1543,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1642,7 +1634,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1688,26 +1679,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _wreckingball (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_EnableCollision
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -0.000000007450581
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.017388962
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8439371944633448606, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -1779,15 +1750,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.0100000035
+      propertyPath: m_EnableCollision
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -0.000000007450581
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.017388962
       objectReference: {fileID: 0}
     - target: {fileID: 3486939357782146630, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -1809,10 +1785,25 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.000000008381903
       objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.0100000035
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.000000007450581
+      objectReference: {fileID: 0}
     - target: {fileID: 3486939359240986122, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.014915381
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc794a796f09a4b4b8b552bdd6cd1e2e, type: 3}
@@ -1873,7 +1864,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1919,16 +1909,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _wreckingball (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_EnableCollision
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8439371944633448606, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -2000,15 +1980,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.00999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -0.0000000037252903
+      propertyPath: m_EnableCollision
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3486939357782146630, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -2030,6 +2005,21 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.000000013969839
       objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.00999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.0000000037252903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc794a796f09a4b4b8b552bdd6cd1e2e, type: 3}
 --- !u!4 &1742652969 stripped
@@ -2049,16 +2039,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _wreckingball (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_EnableCollision
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8439371944633448606, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -2130,6 +2110,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_EnableCollision
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -2139,6 +2124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc794a796f09a4b4b8b552bdd6cd1e2e, type: 3}
@@ -2199,7 +2189,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2291,7 +2280,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2337,16 +2325,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _wreckingball
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_EnableCollision
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8439371944633448606, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
@@ -2418,6 +2396,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688496, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_EnableCollision
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3486939358028620386, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -2427,6 +2410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486939359406688497, guid: fc794a796f09a4b4b8b552bdd6cd1e2e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc794a796f09a4b4b8b552bdd6cd1e2e, type: 3}
@@ -2487,7 +2475,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2579,7 +2566,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
