@@ -36,6 +36,9 @@ public class PlayerGravityMovement : MonoBehaviour
         if (isGrounded && velocity.y < 0) {
             velocity.y = -2f;
         }
+        if (isGrounded && gp.impact.y > 0) {
+            gp.impact.y = 0;
+        }
 
         if (isGrounded) {
             xIn = Input.GetAxis("Horizontal");
@@ -46,8 +49,10 @@ public class PlayerGravityMovement : MonoBehaviour
 
         Vector3 move = tRight * xIn + tForward * zIn;
         if(gp.impact != Vector3.zero) {
-            move = new Vector3(move.x * gp.impact.x, move.y * gp.impact.y, move.z * gp.impact.z);
+            move = new Vector3(move.x + gp.impact.x, 0, move.z + gp.impact.z);
+            velocity.y = Mathf.Sqrt(gp.impact.y * -2 * gravity);
         }
+        
         move.Normalize();
        
         controller.Move(move * speed * Time.deltaTime);

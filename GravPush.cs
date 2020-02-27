@@ -23,7 +23,8 @@ public class GravPush : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q)) {
             if (Physics.Raycast(aim.position, aim.forward, out hit, 5f)) {
                 if (hit.collider != null) {
-                    addImpact(new Vector3(aim.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0) * -1, pushForce);
+                    addImpact(new Vector3(aim.localEulerAngles.z, transform.localEulerAngles.y, aim.localEulerAngles.x * -1), pushForce);
+                    
                 }
                 else {
 
@@ -31,7 +32,7 @@ public class GravPush : MonoBehaviour
             }
         }
         if (impact.magnitude > 0.2) {
-            charContr.Move(impact * Time.deltaTime);
+            //charContr.Move(impact * Time.deltaTime);
         }
         
         impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
