@@ -10,18 +10,21 @@ public class LightFlash : MonoBehaviour
 
     public float timeForFlash;
 
+    private float H, S, V;
     static float t = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
         light = gameObject.GetComponent<Light>();
-        max = light.intensity;
+        Color.RGBToHSV(light.color, out H, out S, out V);
+        max = V;
     }
 
     // Update is called once per frame
     void Update()
     {
-        light.intensity = Mathf.Lerp(min, max, t);
+        light.color = Color.HSVToRGB(H,S, Mathf.Lerp(min, max, t));
 
         t += 1/timeForFlash * Time.deltaTime;
 
