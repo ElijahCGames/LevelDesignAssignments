@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShootSpehere : MonoBehaviour
 {
     [SerializeField]
-    private GameObject sphere;
+    private GameObject sphere = null;
 
     // Update is called once per frame
     void Update()

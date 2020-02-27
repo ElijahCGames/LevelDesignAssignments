@@ -128,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSens: 300
   playerBody: {fileID: 2953641694248611048}
+  aim: {fileID: 3097176857710392220}
 --- !u!1 &2953641694248611051
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,11 +139,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2953641694248611048}
   - component: {fileID: 2953641694248611049}
-  - component: {fileID: 2953641694248611050}
   - component: {fileID: 6954172796514239242}
+  - component: {fileID: 3807204757996553565}
+  - component: {fileID: 5809024066096218843}
   m_Layer: 0
-  m_Name: FirstPersonPlayer
-  m_TagString: Untagged
+  m_Name: FirstPersonPlayerGravity
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,27 +185,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2953641694248611050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2953641694248611051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03634ecebaa3b4945b3ba2a05d00e0aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 12
-  jumpHeight: 3
-  gravity: -19.62
-  groundCheck: {fileID: 2953641693230019247}
-  groundDistance: 0.2
-  controller: {fileID: 2953641694248611049}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &6954172796514239242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +199,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ac: {fileID: 0}
   clip: {fileID: 8300000, guid: e92afc441376cf34ab5d593767ad39de, type: 3}
+--- !u!114 &3807204757996553565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2953641694248611051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef79aa49229914c4a84ada7e1215b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 12
+  jumpHeight: 3
+  gravity: -9.81
+  groundCheck: {fileID: 2953641693230019247}
+  groundDistance: 0.2
+  controller: {fileID: 2953641694248611049}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 256
+  gp: {fileID: 5809024066096218843}
+--- !u!114 &5809024066096218843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2953641694248611051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99a7d6fb9ee57545bf36bb130ea1421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aim: {fileID: 3097176857710392220}
+  mass: 1
+  pushForce: 50
+  charContr: {fileID: 2953641694248611049}
+  impact: {x: 0, y: 0, z: 0}
 --- !u!1 &2953641694697548298
 GameObject:
   m_ObjectHideFlags: 0
